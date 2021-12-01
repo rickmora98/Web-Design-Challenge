@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Bootstrap Visualization Dashboard</title>
+    <title>Latitude And Humidity</title>
 
     <!-- Boostrap Stylesheet -->
     <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
@@ -31,7 +31,7 @@
               <span class="icon-bar"></span>
             </button>
             <div class="col-xs-9 phone-nav">
-              <a class="navbar-brand" href="#" id="logo">Latitude</a>
+              <a class="navbar-brand" href="index.html" id="logo">Latitude</a>
             </div>
           </div>
 
@@ -41,7 +41,7 @@
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                 <li><a href="temp.html">Max Temperature</a></li>
+                  <li><a href="temp.html">Max Temperature</a></li>
                   <li><a href="humidity.html">Humidity</a></li>
                   <li><a href="cloudiness.html">Cloudiness</a></li>
                   <li><a href="wind.html">Wind Speed</a></li>
@@ -52,28 +52,87 @@
             </ul>
           </div><!-- /.navbar-collapse -->
         </div>
+
       </div><!-- /.container-fluid -->
     </nav>
     <!-- End of navbar -->
 
     <!-- Start of container -->
-   
+    <div class = "container">
+      <div class = "row">
+
+        <!-- First column is for humidity analysis content-->
+        <div class = "col-md-8">
+          <article class = "description-content">
+            <h1 class = "description-header">Humidity</h1>
+            <hr class = "description-hr">
+            <a href = "images/Fig2.png">
+              <img src = "images/Fig2.png" title = "Click to Enlarge" alt = "City Latitude Vs. Humidity Plot" class = "img-responsive">
+            </a>
+            <p>
+              The above scatter plot illustrates that a relationship between humidity and latitude
+              is highly unlikely.  The correlation (as shown in the two graphs below) was very weak.
+              On the day of the analysis, the majority of cities reported a humidity greater than 60%
+              and several had 100% humidity.  Notice that the only locations that had humidities less
+              than 20% were concentrated near 20 degrees north or south of the equator.  
+            </p>
+            <br> 
+            <a href = "images/southern_humidities_analysis.png">
+              <img src = "images/southern_humidities_analysis.png" title = "Click to Enlarge" width="48%" height="auto" alt = "Relationship of Humidity with Latitude in Southern Hemisphere">
+            </a>                    
+            <a href = "images/northern_humidities_analysis.png">
+              <img src = "images/northern_humidities_analysis.png" title = "Click to Enlarge" width="48%" height="auto" alt = "Relationship of Humidity with Latitude in Northern Hemisphere">
+            </a>
+          </article>
+        </div>
+        <!-- End of first column -->
+
+        <!-- Second column is for the visualization thumbnails-->
+        <div class = "col-md-4">
+          <section id ="imageNav-area">
+            <div class = "imageNav-content">
+              <h2 class = "imageNav-header">Visualizations</h2>
+              <hr>
+              <div id="images">
+                <a href="temp.html">
+                  <img src="images/Fig1.png" class="imageNav-photo" title="Click to go to Latitude Vs. Max Temperature" alt = "Latitude Vs. Max Temp Thumbnail">
+                </a>
+                <a href="humidity.html">
+                  <img src="images/Fig2.png" class="imageNav-photo active" title="Click to go to Latitude Vs. Humidity" alt = "Latitude Vs. Humidity Thumbnail">
+                </a>
+                <a href="cloudiness.html">
+                  <img src="images/Fig3.png" class="imageNav-photo" title="Click to go to Latitude Vs. Cloudiness" alt = "Latitude Vs. Cloudiness Thumbnail">
+                </a>
+                <a href="wind.html">
+                  <img src="images/Fig4.png" class="imageNav-photo" title="Click to go to Latitude Vs. Wind Speed" alt = "Latitude Vs. Wind Speed Thumnbnail">
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- End of second column -->
+
+      </div>
+      <!-- End of row -->
+
+    </div>
     <!-- End of container -->
 
-    <!-- Start of footer -->
-    <footer class="footer navbar-fixed-bottom">
-      <div class="two-toned-footer-color"></div>
+  </body>
+
+  <!-- Start of footer -->
+  <footer class="footer navbar-fixed-bottom">
+    <div class="two-toned-footer-color"></div>
       <p class="text-muted text-muted-footer text-center">
         <b>&copy; Copyright Coding Bootcamp 2021</b>
       </p>
-    </footer>
-    <!-- End of footer -->
+  </footer>
+  <!-- End of footer -->
 
-    <!-- jQuery CDN -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <!-- jQuery CDN -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 
-    <!-- Bootstrap CDN -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  </body>
+  <!-- Bootstrap CDN -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 </html>

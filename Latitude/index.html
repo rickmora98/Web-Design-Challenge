@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Bootstrap Visualization Dashboard</title>
+    <title>Latitude And Weather Home</title>
 
     <!-- Boostrap Stylesheet -->
     <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
@@ -61,29 +61,33 @@
     <div class = "container">
       <div class = "row">
 
-        <!-- first column is for the summary -->
+        <!-- First column is for the summary -->
         <div class = "col-md-8">
           <article class = "description-content">
-            <h1 class = "description-header">Summary: Latitude vs. X</h1>
+            <h1 class = "description-header">Introduction: The Effects of Latitude on Weather</h1>
             <hr class = "description-hr">
-            <img src = "images/Fig1.png" title = "City Latitude Vs. Max Temp Plot" id = "description-image">
+            <a href = "images/Fig1.png">
+              <img src = "images/Fig1.png" title = "Click to Enlarge" id = "description-image" alt = "Latitude Vs. Max Temp Plot">
+            </a>
             <p>
-               The purpose of this project was to analyze how weather changes
-               as you get closer to the equater.  To accomplish this analysis,
-               we first pulled data from the OpenWeatherMap API to assemble a
-               Dataset of over 500 cities.
+              The purpose of this project was to analyze how weather in a location is influenced
+              by distance from the equator.  To accomplish this analysis, we first generated
+              a list of over 500 random cities from around the world that were somewhat equally
+              spaced apart using CityPy.  We then used OpenWeatherMap to collect the observed
+              weather data for these cities for one single day.
             </p>
             <p>
-               After assembling the dataset, we used Matplolib to plot various aspects of
-               the weather versus latitude.  Factors we looked at included: temperature,
-               cloudiness, windspeed, and humidity.  This site provides source data and
-               visualizations created as a part of the analysis, as well as explanations
-               of trends and any other correlations witnessed.
+              After assembling the dataset, we used Matplolib to plot various aspects of
+              the weather versus latitude.  Factors we examined included: temperature,
+              cloudiness, windspeed, and humidity.  This site provides source data and
+              visualizations created as a part of the analysis, as well as explanations
+              of trends and any other correlations witnessed.
             </p>
           </article>
         </div>
+        <!-- End of first column -->
 
-        <!-- second column is for the visualization thumbnails -->
+        <!-- Second column is for the visualization thumbnails -->
         <div class = "col-md-4">
           <section id ="imageNav-area">
             <div class = "imageNav-content">
@@ -91,26 +95,29 @@
               <hr>
               <div id="images">
                 <a href="temp.html">
-                  <img src="images/Fig1.png" class="imageNav-photo" title="Latitude Vs. Max Temperature">
+                  <img src="images/Fig1.png" class="imageNav-photo" title="Click to go to Latitude Vs. Max Temperature" alt = "Latitude Vs. Max Temp Thumbnail">
                 </a>
                 <a href="humidity.html">
-                  <img src="images/Fig2.png" class="imageNav-photo" title="Latitude Vs. Humidity">
+                  <img src="images/Fig2.png" class="imageNav-photo" title="Click to go to Latitude Vs. Humidity" alt = "Latitude Vs. Humidity Thumbnail">
                 </a>
                 <a href="cloudiness.html">
-                  <img src="images/Fig3.png" class="imageNav-photo" title="Latitude Vs. Cloudiness">
+                  <img src="images/Fig3.png" class="imageNav-photo" title="Click to go to Latitude Vs. Cloudiness" alt = "Latitude Vs. Cloudiness Thumbnail">
                 </a>
                 <a href="wind.html">
-                  <img src="images/Fig4.png" class="imageNav-photo" title="Latitude Vs. Windspeed">
+                  <img src="images/Fig4.png" class="imageNav-photo" title="Click to go to Latitude Vs. Wind Speed" alt = "Latitude Vs. Wind Speed Thumnbnail">
                 </a>
               </div>
             </div>
           </section>
         </div>
+        <!-- End of second column -->
 
       </div>
       <!-- End of row -->
+
     </div>
     <!-- End of container -->
+
   </body>
 
   <!-- Start of footer -->

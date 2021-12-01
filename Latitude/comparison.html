@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Bootstrap Visualization Dashboard</title>
+    <title>Comparison Snapshot</title>
 
     <!-- Boostrap Stylesheet -->
     <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
@@ -31,7 +31,7 @@
               <span class="icon-bar"></span>
             </button>
             <div class="col-xs-9 phone-nav">
-              <a class="navbar-brand" href="#" id="logo">Latitude</a>
+              <a class="navbar-brand" href="index.html" id="logo">Latitude</a>
             </div>
           </div>
 
@@ -41,7 +41,7 @@
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                 <li><a href="temp.html">Max Temperature</a></li>
+                  <li><a href="temp.html">Max Temperature</a></li>
                   <li><a href="humidity.html">Humidity</a></li>
                   <li><a href="cloudiness.html">Cloudiness</a></li>
                   <li><a href="wind.html">Wind Speed</a></li>
@@ -52,28 +52,62 @@
             </ul>
           </div><!-- /.navbar-collapse -->
         </div>
+
       </div><!-- /.container-fluid -->
     </nav>
     <!-- End of navbar -->
 
     <!-- Start of container -->
-   
+    <div class = "container">
+      <article class = "description-content row">
+        <div class = "col-md-12">
+          <h1 class = "description-header">Comparison: Latitude vs. X</h1>
+          <hr class = "description-hr">
+          <p>Click any plot to see an analysis:</p>
+        </div>
+        <div class = "col-md-6">
+          <h2 class = "comparison-header">vs. Max Temperature</h2>
+          <a href = "temp.html">
+            <img src = "images/Fig1.png" title = "Click to go to Latitude vs. Max Temperature Analysis" alt = "Latitude vs. Max Temperature Plot" class = "comparison-img img-responsive">
+          </a>
+        </div>
+        <div class = "col-md-6">
+          <h2 class = "comparison-header">vs. Humidity</h2>
+          <a href = "humidity.html">
+            <img src = "images/Fig2.png" title = "Click to go to Latitude vs. Humidity Analysis" alt = "Latitude vs. Humidity Plot" class = "comparison-img img-responsive">
+          </a>
+        </div>
+        <div class = "col-md-6">
+          <h2 class = "comparison-header">vs. Cloudiness</h2>
+          <a href = "cloudiness.html">
+            <img src = "images/Fig3.png" title = "Click to go to Latitude vs. Cloudiness Analysis" alt = "Latitude vs. Cloudiness Plot" class = "comparison-img img-responsive">
+          </a>
+        </div>
+        <div class = "col-md-6">
+          <h2 class = "comparison-header">vs. Wind Speed</h2>
+          <a href = "wind.html">
+            <img src = "images/Fig4.png" title = "Click to go to Latitude vs. Wind Speed Analysis" alt = "Latitude vs. Wind Speed Plot" class = "comparison-img img-responsive">
+          </a>
+        </div>
+      </article>
+    </div>
     <!-- End of container -->
 
-    <!-- Start of footer -->
-    <footer class="footer navbar-fixed-bottom">
-      <div class="two-toned-footer-color"></div>
+  </body>
+
+  <!-- Start of footer -->
+  <footer class="footer navbar-fixed-bottom">
+    <div class="two-toned-footer-color"></div>
       <p class="text-muted text-muted-footer text-center">
         <b>&copy; Copyright Coding Bootcamp 2021</b>
       </p>
-    </footer>
-    <!-- End of footer -->
+  </footer>
+  <!-- End of footer -->
 
-    <!-- jQuery CDN -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <!-- jQuery CDN -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 
-    <!-- Bootstrap CDN -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  </body>
+  <!-- Bootstrap CDN -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 </html>

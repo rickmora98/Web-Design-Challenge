@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Bootstrap Visualization Dashboard</title>
+    <title>Latitude And Temperature</title>
 
     <!-- Boostrap Stylesheet -->
     <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
@@ -31,7 +31,7 @@
               <span class="icon-bar"></span>
             </button>
             <div class="col-xs-9 phone-nav">
-              <a class="navbar-brand" href="#" id="logo">Latitude</a>
+              <a class="navbar-brand" href="index.html" id="logo">Latitude</a>
             </div>
           </div>
 
@@ -41,7 +41,7 @@
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                 <li><a href="temp.html">Max Temperature</a></li>
+                  <li><a href="temp.html">Max Temperature</a></li>
                   <li><a href="humidity.html">Humidity</a></li>
                   <li><a href="cloudiness.html">Cloudiness</a></li>
                   <li><a href="wind.html">Wind Speed</a></li>
@@ -52,28 +52,92 @@
             </ul>
           </div><!-- /.navbar-collapse -->
         </div>
+
       </div><!-- /.container-fluid -->
     </nav>
     <!-- End of navbar -->
 
     <!-- Start of container -->
-    
+    <div class = "container">
+      <div class = "row">
+
+        <!-- First column is for temperature analysis content-->
+        <div class = "col-md-8">
+          <article class = "description-content">
+            <h1 class = "description-header">Max Temperature</h1>
+            <hr class = "description-hr">
+            <a href = "images/Fig1.png">
+              <img src = "images/Fig1.png" title = "Click to Enlarge" alt = "City Latitude Vs. Max Temp Plot" class = "img-responsive">
+            </a>
+            <p>
+              Each point in the above plot represents the observed high temperature for each of
+              the random cities chosen on the day this analysis was performed.  As expected,
+              the temperature was warmer for cities nearer to the equator (Latitude = 0) than
+              for cities farther away.  The correlation between temperature and latitude is strong
+              and is illustrated in the two graphs below.  Notice that the temperatures for places in one hemisphere are relatively
+              similar to those places in the other hemisphere that have the same distance from the equator. This is probably
+              because the analysis was performed on a day close to the equinox, which meant that it was neither winter nor summer
+              in either hemisphere.  Although unrelated, it is interesting to note that the Northern Hemisphere
+              appears to have more cities than the Southern Hemisphere and that there are more cities nearer to the North Pole
+              than the South Pole.
+            </p>
+            <br> 
+             <a href = "images/southern_temps_analysis.png">
+              <img src = "images/southern_temps_analysis.png" title = "Click to Enlarge" width="48%" height="auto" alt = "Relationship of Temp with Latitude in Southern Hemisphere">
+            </a>                    
+            <a href = "images/northern_temps_analysis.png">
+              <img src = "images/northern_temps_analysis.png" title = "Click to Enlarge" width="48%" height="auto" alt = "Relationship of Temp with Latitude in Northern Hemisphere">
+            </a>
+          </article>
+        </div>
+        <!-- End of first column -->
+
+        <!-- Second column is for the visualization thumbnails-->
+        <div class = "col-md-4">
+          <section id ="imageNav-area">
+            <div class = "imageNav-content">
+              <h2 class = "imageNav-header">Visualizations</h2>
+              <hr>
+              <div id="images">
+                <a href="temp.html">
+                  <img src="images/Fig1.png" class="imageNav-photo active" title="Click to go to Latitude Vs. Max Temperature" alt = "Latitude Vs. Max Temp Thumbnail">
+                </a>
+                <a href="humidity.html">
+                  <img src="images/Fig2.png" class="imageNav-photo" title="Click to go to Latitude Vs. Humidity" alt = "Latitude Vs. Humidity Thumbnail">
+                </a>
+                <a href="cloudiness.html">
+                  <img src="images/Fig3.png" class="imageNav-photo" title="Click to go to Latitude Vs. Cloudiness" alt = "Latitude Vs. Cloudiness Thumbnail">
+                </a>
+                <a href="wind.html">
+                  <img src="images/Fig4.png" class="imageNav-photo" title="Click to go to Latitude Vs. Wind Speed" alt = "Latitude Vs. Wind Speed Thumnbnail">
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- End of second column -->
+
+      </div>
+      <!-- End of row -->
+
+    </div>
     <!-- End of container -->
 
-    <!-- Start of footer -->
-    <footer class="footer navbar-fixed-bottom">
-      <div class="two-toned-footer-color"></div>
+  </body>
+
+  <!-- Start of footer -->
+  <footer class="footer navbar-fixed-bottom">
+    <div class="two-toned-footer-color"></div>
       <p class="text-muted text-muted-footer text-center">
         <b>&copy; Copyright Coding Bootcamp 2021</b>
       </p>
-    </footer>
-    <!-- End of footer -->
+  </footer>
+  <!-- End of footer -->
 
-    <!-- jQuery CDN -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <!-- jQuery CDN -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 
-    <!-- Bootstrap CDN -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  </body>
+  <!-- Bootstrap CDN -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 </html>
