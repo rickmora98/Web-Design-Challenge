@@ -22,7 +22,7 @@ https://rickmora98.github.io/Web-Design-Challenge/ <br>
 
 #### Note: <br>
 
-The deployed website relies on the folders and files and their relative locations within the *"docs"* folder as indicated above. <br>
+The deployed website relies on the folders and files and their relative locations within the **"docs"** folder as indicated above. <br>
 Please do not delete, move, rename, or alter any of these folders and/or files. <br>
 Thank you. <br>
 
