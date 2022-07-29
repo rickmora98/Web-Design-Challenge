@@ -1,9 +1,14 @@
-# Web-Design-Challenge 
+<h1> The Effects of Latitude on Weather <br> (HTML / CSS / Bootstrap Demonstration) </h1>
 
-This repository contains my solutions to Data Analytics Bootcamp Homework Assignment for week #11.
+#### Overview:
+The purpose of this project was to create a website that illustrates how weather in a location might be influenced by distance from the equator.
+Four aspects of weather were examined: temperature, cloudiness, windspeed, and humidity.
+
+
+#### Deployed website:
+https://rickmora98.github.io/Web-Design-Challenge/
 
 #### Folders/Files:
-
 + **"docs"** (this is the main folder which contains the website source code) <br>
 	- *"index.html"* (landing page) <br>
 	- *"temp.html"* (temperature analysis page) <br>
@@ -16,16 +21,8 @@ This repository contains my solutions to Data Analytics Bootcamp Homework Assign
 	- **"data"** (folder containing the data table) <br>
 	- **"images"** (folder containing all images used by the website) <br>
 	
-#### Deployed website: <br>
-
-https://rickmora98.github.io/Web-Design-Challenge/ <br>
-
-#### Note: <br>
-
 The deployed website relies on the folders and files and their relative locations within the **"docs"** folder as indicated above. <br>
-Please do not delete, move, rename, or alter any of these folders and/or files. <br>
-Thank you. <br>
+(Please do not delete, move, rename, or alter!)
 
-#### Submitted by: <br>
- Ricardo G. Mora, Jr.  12/02/2021
+#### 
  
