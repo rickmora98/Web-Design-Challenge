@@ -2,8 +2,11 @@
 
 #### Overview:
 The purpose of this project was to create a website that illustrates how weather in a location might be influenced by distance from the equator.
-Four aspects of weather were examined: temperature, cloudiness, windspeed, and humidity.
+The website was built using HTML, CSS, the Bootstrap library, and static visualizations from a previous project that explored this topic: 
+https://github.com/rickmora98/python-api-challenge/
 
+To see the results of the analysis, click on the deployed website link below.
+To examine the code files, their locations are indicated in the tree below.
 
 #### Deployed website:
 https://rickmora98.github.io/Web-Design-Challenge/
