@@ -3,7 +3,7 @@
 #### Overview:
 The purpose of this project was to create a website that illustrates how weather in a location might be influenced by distance from the equator.
 The website was built using HTML, CSS, the Bootstrap library, and static visualizations from a previous project that explored this topic: 
-https://github.com/rickmora98/python-api-challenge/
+https://github.com/rickmora98/Python-API/
 
 To see the results of the analysis, click on the deployed website link below. <br>
 To examine the code files, their locations are indicated in the tree below.
